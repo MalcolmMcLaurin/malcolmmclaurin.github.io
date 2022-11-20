@@ -84,9 +84,9 @@ function start() {
   sv.style.opacity = "0";
   fp.style.opacity = "0";
 
-  ws.style.width = "800px";
+  ws.style.width = "1200px";
   ws.style.opacity = "1";
-  ws.style.left = "300px";
+  ws.style.left = "500px";
 
   wsde.style.opacity = "0";
   wstr.style.opacity = "0";
@@ -97,9 +97,9 @@ function start() {
   wstr.style.zIndex = "-1";
   wsqu.style.zIndex = "-1";
 
-  wsde.style.left = "300px";
-  wstr.style.left = "300px";
-  wsqu.style.left = "300px";
+  wsde.style.left = "500px";
+  wstr.style.left = "500px";
+  wsqu.style.left = "500px";
 
   wsde.style.width = "1200px";
   wstr.style.width = "1200px";
@@ -131,9 +131,9 @@ function start2() {
   sv.style.opacity = "0";
   fp.style.opacity = "0";
 
-  wsde.style.width = "800px";
+  wsde.style.width = "1200px";
   wsde.style.opacity = "1";
-  wsde.style.left = "300px";
+  wsde.style.left = "500px";
 
   ws.style.opacity = "0";
   wstr.style.opacity = "0";
@@ -144,9 +144,9 @@ function start2() {
   wstr.style.zIndex = "-1";
   wsqu.style.zIndex = "-1";
 
-  ws.style.left = "300px";
-  wstr.style.left = "300px";
-  wsqu.style.left = "300px";
+  ws.style.left = "500px";
+  wstr.style.left = "500px";
+  wsqu.style.left = "500px";
 
   ws.style.width = "1200px";
   wstr.style.width = "1200px";
@@ -178,9 +178,9 @@ function start3() {
   sv.style.opacity = "0";
   fp.style.opacity = "0";
 
-  wstr.style.width = "800px";
+  wstr.style.width = "1200px";
   wstr.style.opacity = "1";
-  wstr.style.left = "300px";
+  wstr.style.left = "500px";
 
   wsde.style.opacity = "0";
   ws.style.opacity = "0";
@@ -191,9 +191,9 @@ function start3() {
   wstr.style.zIndex = "0";
   wsqu.style.zIndex = "-1";
 
-  wsde.style.left = "300px";
-  ws.style.left = "300px";
-  wsqu.style.left = "300px";
+  wsde.style.left = "500px";
+  ws.style.left = "500px";
+  wsqu.style.left = "500px";
 
   wsde.style.width = "1200px";
   ws.style.width = "1200px";
@@ -225,9 +225,9 @@ function start4() {
   sv.style.opacity = "0";
   fp.style.opacity = "0";
 
-  wsqu.style.width = "800px";
+  wsqu.style.width = "1200px";
   wsqu.style.opacity = "1";
-  wsqu.style.left = "300px";
+  wsqu.style.left = "500px";
 
   wsde.style.opacity = "0";
   wstr.style.opacity = "0";
@@ -238,9 +238,9 @@ function start4() {
   wstr.style.zIndex = "-1";
   wsqu.style.zIndex = "0";
 
-  wsde.style.left = "300px";
-  wstr.style.left = "300px";
-  ws.style.left = "300px";
+  wsde.style.left = "500px";
+  wstr.style.left = "500px";
+  ws.style.left = "500px";
 
   wsde.style.width = "1200px";
   wstr.style.width = "1200px";
