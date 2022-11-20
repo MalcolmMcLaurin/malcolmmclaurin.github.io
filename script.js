@@ -63,7 +63,7 @@ function check() {
 
 function start() {
   svp.style.left = "100%";
-  svp.style.width = "20%";
+  svp.style.width = "40%";
   svp.style.backgroundImage =
     "url(https://cdn.glitch.global/9169d231-8c93-4181-bba6-4e8d8bfd705f/nick-nice-gPm8h3DS1s4-unsplash.jpg?v=1665151317012)";
   svp.style.backgroundSize = "cover";
@@ -71,7 +71,7 @@ function start() {
   svp.style.filter = "brightness(40%)";
 
   sp.style.left = "100%";
-  sp.style.width = "20%";
+  sp.style.width = "40%";
   sp.style.color = "white";
 
   svpd.style.left = "0px";
@@ -101,16 +101,16 @@ function start() {
   wstr.style.left = "300px";
   wsqu.style.left = "300px";
 
-  wsde.style.width = "800px";
-  wstr.style.width = "800px";
-  wsqu.style.width = "800px";
+  wsde.style.width = "1200px";
+  wstr.style.width = "1200px";
+  wsqu.style.width = "1200px";
 
-  bkgif.style.opacity = "1";
+  bkgif.style.opacity = "0";
 }
 
 function start2() {
   svp.style.left = "100%";
-  svp.style.width = "20%";
+  svp.style.width = "40%";
   svp.style.backgroundImage =
     "url(https://cdn.glitch.global/9169d231-8c93-4181-bba6-4e8d8bfd705f/nick-nice-gPm8h3DS1s4-unsplash.jpg?v=1665151317012)";
   svp.style.backgroundSize = "cover";
@@ -118,7 +118,7 @@ function start2() {
   svp.style.filter = "brightness(40%)";
 
   sp.style.left = "100%";
-  sp.style.width = "20%";
+  sp.style.width = "40%";
   sp.style.color = "white";
 
   svpd.style.left = "0px";
@@ -148,16 +148,16 @@ function start2() {
   wstr.style.left = "300px";
   wsqu.style.left = "300px";
 
-  ws.style.width = "800px";
-  wstr.style.width = "800px";
-  wsqu.style.width = "800px";
+  ws.style.width = "1200px";
+  wstr.style.width = "1200px";
+  wsqu.style.width = "1200px";
 
-  bkgif.style.opacity = "1";
+  bkgif.style.opacity = "0";
 }
 
 function start3() {
   svp.style.left = "100%";
-  svp.style.width = "20%";
+  svp.style.width = "40%";
   svp.style.backgroundImage =
     "url(https://cdn.glitch.global/9169d231-8c93-4181-bba6-4e8d8bfd705f/nick-nice-gPm8h3DS1s4-unsplash.jpg?v=1665151317012)";
   svp.style.backgroundSize = "cover";
@@ -165,7 +165,7 @@ function start3() {
   svp.style.filter = "brightness(40%)";
 
   sp.style.left = "100%";
-  sp.style.width = "20%";
+  sp.style.width = "40%";
   sp.style.color = "white";
 
   svpd.style.left = "0px";
@@ -195,16 +195,16 @@ function start3() {
   ws.style.left = "300px";
   wsqu.style.left = "300px";
 
-  wsde.style.width = "800px";
-  ws.style.width = "800px";
-  wsqu.style.width = "800px";
+  wsde.style.width = "1200px";
+  ws.style.width = "1200px";
+  wsqu.style.width = "1200px";
 
-  bkgif.style.opacity = "1";
+  bkgif.style.opacity = "0";
 }
 
 function start4() {
   svp.style.left = "100%";
-  svp.style.width = "20%";
+  svp.style.width = "40%";
   svp.style.backgroundImage =
     "url(https://cdn.glitch.global/9169d231-8c93-4181-bba6-4e8d8bfd705f/nick-nice-gPm8h3DS1s4-unsplash.jpg?v=1665151317012)";
   svp.style.backgroundSize = "cover";
@@ -212,7 +212,7 @@ function start4() {
   svp.style.filter = "brightness(40%)";
 
   sp.style.left = "100%";
-  sp.style.width = "20%";
+  sp.style.width = "40%";
   sp.style.color = "white";
 
   svpd.style.left = "0px";
@@ -242,9 +242,9 @@ function start4() {
   wstr.style.left = "300px";
   ws.style.left = "300px";
 
-  wsde.style.width = "800px";
-  wstr.style.width = "800px";
-  ws.style.width = "800px";
+  wsde.style.width = "1200px";
+  wstr.style.width = "1200px";
+  ws.style.width = "1200px";
 
-  bkgif.style.opacity = "1";
+  bkgif.style.opacity = "0";
 }
