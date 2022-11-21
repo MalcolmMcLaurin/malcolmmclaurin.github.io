@@ -29,7 +29,7 @@ var bkgif = document.getElementById("bkgif");
 
 var ready = false;
 
-function displayPanel() {
+function displayPanel2() {
   svp.style.opacity = "1";
   sp.style.opacity = "1";
   svp.style.zIndex = "999";

@@ -29,6 +29,18 @@ var bkgif = document.getElementById("bkgif");
 
 var ready = false;
 
+var ww = 800;
+var hh = 600;
+
+var scrnw = window.innerWidth;
+var scrnh = window.innerHeight;
+
+function initiate(){
+  if(scrnw <= ww || scrnh <= hh){
+    document.location.href = "mobile.html";
+  }
+}
+
 function displayPanel() {
   svp.style.opacity = "1";
   sp.style.opacity = "1";
