@@ -72,13 +72,13 @@
     background-position: center;
     background-size: 7%;
     background-repeat: no-repeat;
-    background: clear;
+    background: clearred;
     filter: brightness(80%);
   }
   #sidepanelserve3 {
     position: fixed;
     height: 100%;
-    background: white;
+    background: clear;
     font-family: "Nunito", sans-serif;
     opacity: 1;
     top: 0px;
@@ -102,7 +102,7 @@
     background: clear;
     top:0px;
   }
-  .prof {
+  #prof {
     position: relative;
     top: 100px;
     width: 90%;
@@ -330,28 +330,35 @@
     height: 80px;
     width: 80px;
   }
+  #block{
+    position:absolute;
+    width:17%;
+    height:50px;
+    background:black;
+    border-radius:15px;
+    border:3px solid black;
+    margin:1em;
+    right:0px;
+    z-index:-4;
+  }
   #linx{
     position:fixed;
-    bottom:0px;
-    width:100%;
-    height:120px;
+    right:0px;
+    width:20%;
+    height:100%;
     background:black;
     font-family: "Nunito", sans-serif;
-    z-index:999;
-    left:100%;
+    z-index:-6;
+    opacity:1;
   }
   #al{
     position:relative;
     width:100%;
     height:100%;
-    
-    display:flex;
-    justify-content:center;
-    align-items:center;
   }
-  .linxbox{
+  #linxbox{
     position:relative;
-    width:25%;
+    width:80%;
     height:50px;
     background:black;
     border-radius:15px;

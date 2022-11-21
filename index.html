@@ -2,12 +2,22 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="https://cdn.glitch.global/9169d231-8c93-4181-bba6-4e8d8bfd705f/AFDWLogoNBthickerIV-removebg-preview.png?v=1668974327132" />
 
     <title>Malcolm McLaurin</title>
-    <link rel="stylesheet" href="/style.css" />
-    <script src="/script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <script type="text/javascript">
+    $(window).on('load resize',function(){
+        if($(window).width() < 950){
+            window.location = "file:///C:/Users/invic/OneDrive/Documents/GitHub/malcolmmclaurin.github.io/mobile.html"
+            location.reload();
+            window.location.href = window.location.href;
+        }
+        location.reload();
+        window.location.href = window.location.href;
+    });
+</script>
   </head>
   <body>
     <div id="bkgif"></div>

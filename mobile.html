@@ -2,14 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="https://cdn.glitch.global/9169d231-8c93-4181-bba6-4e8d8bfd705f/AFDWLogoNBthickerIV-removebg-preview.png?v=1668974327132" />
 
     <title>Malcolm McLaurin</title>
-    <link href="/nostylist.css" rel="stylesheet" />
-    <script src="/mobile.js" defer></script>
+    <link  rel="stylesheet" href="nostylist.css" />
+    <script src="mobile.js" defer></script>
   </head>
   <body>
+    <div id="block" onclick="back()"></div>
     <div id="serve"></div>
     <div id="set">
       <div id="fpw">
@@ -48,7 +48,7 @@
             University of Pittsburgh.<br /><br />Check out
           </p>
           <p
-            onclick="start3();"
+            onclick="start3()"
             style="color: blue; text-decoration: underline; display: inline"
           >
             my portfolio
@@ -115,24 +115,9 @@
     </div>
     <div id="linx">
       <div id="al">
-        <div class="linxbox" onclick="start1();">
+        <div id="linxbox">
           <div class="lb">
-            About Me
-          </div>
-        </div>
-        <div class="linxbox" onclick="start2();">
-          <div class="lb">
-            Services
-          </div>
-        </div>
-        <div class="linxbox" onclick="start3();">
-          <div class="lb">
-            Portfolio
-          </div>
-        </div>
-        <div class="linxbox" onclick="start4();">
-          <div class="lb">
-            Contact Me
+          <p>Back</p>
           </div>
         </div>
       </div>
@@ -140,7 +125,7 @@
     <div id="sidepanelserve3"></div>
     <div id="sidepanel3">
       <div class="cplspace">
-        <div class="prof">
+        <div id="prof">
           <div class="profpic"></div>
           <div class="profnam">
             <div id="proftt1">Malcolm McLaurin</div>
@@ -149,16 +134,16 @@
         </div>
         <div class="cpl">
           <div class="cplw">
-            <div class="clb" onclick="start();">
+            <div class="clb" onclick="start()">
               <div class="ab">About Me</div>
             </div>
-            <div class="clb" onclick="start2();">
+            <div class="clb" onclick="start2()">
               <div class="ab">Services</div>
             </div>
-            <div class="clb" onclick="start3();">
+            <div class="clb" onclick="start3()">
               <div class="ab">Portfolio</div>
             </div>
-            <div class="clb" onclick="start4();">
+            <div class="clb" onclick="start4()">
               <div class="ab">Contact Me</div>
             </div>
           </div>
