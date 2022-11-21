@@ -41,6 +41,8 @@ function initiate(){
   }
 }
 
+window.onload = initiate;
+
 function displayPanel() {
   svp.style.opacity = "1";
   sp.style.opacity = "1";
