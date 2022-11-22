@@ -7,20 +7,10 @@
     <title>Malcolm McLaurin</title>
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
-    <script type="text/javascript">
-    $(window).on('load resize',function(){
-        if($(window).width() < 950){
-            window.location = "file:///C:/Users/invic/OneDrive/Documents/GitHub/malcolmmclaurin.github.io/mobile.html"
-            location.reload();
-            window.location.href = window.location.href;
-        }
-        location.reload();
-        window.location.href = window.location.href;
-    });
-</script>
   </head>
   <body>
     <div id="bkgif"></div>
+    <div id="disable">This site has been disabled for maintenance.</div>
     <div id="serve"></div>
     <div id="set">
       <div id="fpw">
@@ -28,7 +18,7 @@
           <div id="turtles">
             <div id="title">Malcolm McLaurin</div>
             <div id="subtitle">Front End Developer</div>
-            <div id="go" onclick="displayPanel()"></div>
+            <div id="go" onclick="disable()"></div>
           </div>
         </div>
       </div>

@@ -126,6 +126,20 @@
     background: clear;
     filter: brightness(80%);
   }
+  #disable{
+    position:fixed;
+    height:40px;
+    width:100%;
+    background:red;
+    margin: 0 auto;
+    display: none;
+    top:100px;
+    z-index:999;
+    text-align:center;
+    color:white;
+    font-family: "Nunito", sans-serif;
+    font-size:20px;
+  }
   #sidepanelserve {
     position: fixed;
     height: 100%;

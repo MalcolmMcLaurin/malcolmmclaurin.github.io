@@ -35,14 +35,19 @@ var hh = 600;
 var scrnw = window.innerWidth;
 var scrnh = window.innerHeight;
 
+
+var db = document.getElementById("disable");
+
+
+
 /*function initiate(){
   if(scrnw <= ww || scrnh <= hh){
     document.location.href = "mobile.html";
     alert(scrnw);
   }
-}
+}*/
 
-window.onload = initiate;*/
+window.onload = disable;
 
 /*function displayPanel() {
   svp.style.opacity = "1";
@@ -52,6 +57,10 @@ window.onload = initiate;*/
   fp.style.left = "-300px";
   set.style.justifyContent = "left";
 }*/
+
+function disable(){
+  db.style.display = "block";
+}
 
 function big1() {
   r1.style.margin = "0 auto";
