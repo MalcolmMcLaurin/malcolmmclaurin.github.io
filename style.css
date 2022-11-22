@@ -2,10 +2,49 @@
     margin: 0;
     transition: 1s;
   }
-  @font-face {
+@font-face {
     font-family: Nunito;
     src: url(https://cdn.glitch.global/9169d231-8c93-4181-bba6-4e8d8bfd705f/Nunito-Regular.ttf?v=1665153599719);
   }
+@media screen and (max-width: 992px) {
+    serve{
+      position: fixed;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100%;
+      width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    serve{
+      position: fixed;
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 100%;
+      width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   body {
     background: black;
   }
@@ -25,7 +64,7 @@
   #serve {
     position: fixed;
     background-image: url("https://cdn.glitch.global/9169d231-8c93-4181-bba6-4e8d8bfd705f/nick-nice-gPm8h3DS1s4-unsplash.jpg?v=1665151317012");
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
     width: 100%;
@@ -107,6 +146,14 @@
     top: 0px;
     width: 600px;
     right: 0px;
+  }
+@media screen and (max-width: 2000px){
+    #sidepanelserve{
+      position:fixed;
+      height:100%;
+      width:100%;
+      background:white;
+    }
   }
   #sidepanelservede {
     position: fixed;

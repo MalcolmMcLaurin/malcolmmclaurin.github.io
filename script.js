@@ -29,28 +29,29 @@ var bkgif = document.getElementById("bkgif");
 
 var ready = false;
 
-var ww = 800;
+var ww = 2000;
 var hh = 600;
 
 var scrnw = window.innerWidth;
 var scrnh = window.innerHeight;
 
-function initiate(){
+/*function initiate(){
   if(scrnw <= ww || scrnh <= hh){
     document.location.href = "mobile.html";
+    alert(scrnw);
   }
 }
 
-window.onload = initiate;
+window.onload = initiate;*/
 
-function displayPanel() {
+/*function displayPanel() {
   svp.style.opacity = "1";
   sp.style.opacity = "1";
   tt.style.textAlign = "left";
   go.style.backgroundPosition = "left";
   fp.style.left = "-300px";
   set.style.justifyContent = "left";
-}
+}*/
 
 function big1() {
   r1.style.margin = "0 auto";
