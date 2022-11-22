@@ -10,7 +10,9 @@ var sv = document.getElementById("serve");
 var set = document.getElementById("set");
 var fp = document.getElementById("fpw");
 var tt = document.getElementById("turtles");
-var go = document.getElementById("go");
+var go = document.getElementById("gto");
+
+var wspace = document.getElementsByClassName("wspace");
 
 var r1 = document.getElementById("resh");
 var r2 = document.getElementById("resh2");
@@ -28,6 +30,7 @@ var wsqu = document.getElementById("wsqu");
 var bkgif = document.getElementById("bkgif");
 
 var ready = false;
+var mobile = false;
 
 var ww = 2000;
 var hh = 600;
@@ -35,240 +38,386 @@ var hh = 600;
 var scrnw = window.innerWidth;
 var scrnh = window.innerHeight;
 
-
-var db = document.getElementById("disable");
-
-
-
-/*function initiate(){
+function initiate(){
   if(scrnw <= ww || scrnh <= hh){
-    document.location.href = "mobile.html";
-    alert(scrnw);
+    mobile = true;
   }
-}*/
-
-window.onload = disable;
-
-/*function displayPanel() {
-  svp.style.opacity = "1";
-  sp.style.opacity = "1";
-  tt.style.textAlign = "left";
-  go.style.backgroundPosition = "left";
-  fp.style.left = "-300px";
-  set.style.justifyContent = "left";
-}*/
-
-function disable(){
-  db.style.display = "block";
 }
 
-function big1() {
-  r1.style.margin = "0 auto";
-  rss.style.display = "block";
-  g1.style.background = "gray";
-  rss.style.background = "clear";
-  r1.style.width = "900px";
-  r1.style.height = "850px";
-  r1.style.top = "-150px";
-  gui.style.opacity = "0";
-  rss.style.height = "0px";
-  r1.style.boxShadow = "0px 0px 3px 1px darkgray";
-  ready = true;
-}
+window.onload = displayPanel;
 
-function check() {
-  if (ready === true) {
-    g1.addEventListener("click", () => {
-      location.reload();
-    });
+function displayPanel() {
+  if(mobile === false){
+    svp.style.opacity = "1";
+    sp.style.opacity = "1";
+    tt.style.textAlign = "left";
+    go.style.backgroundPosition = "left";
+    fp.style.left = "-300px";
+    set.style.justifyContent = "left";
+  } else {
+    svp.style.opacity = "1";
+    sp.style.opacity = "1";
+    svp.style.width = "100%";
+    sp.style.width = "100%";
   }
-  ready = false;
 }
 
 function start() {
-  svp.style.left = "100%";
-  svp.style.width = "40%";
-  svp.style.backgroundImage =
-    "url(https://cdn.glitch.global/9169d231-8c93-4181-bba6-4e8d8bfd705f/nick-nice-gPm8h3DS1s4-unsplash.jpg?v=1665151317012)";
-  svp.style.backgroundSize = "cover";
-  svp.style.backgroundPosition = "center";
-  svp.style.filter = "brightness(40%)";
+  if(mobile === false){
+    svp.style.left = "100%";
+    svp.style.width = "40%";
+    svp.style.backgroundImage =
+      "url(https://cdn.glitch.global/9169d231-8c93-4181-bba6-4e8d8bfd705f/nick-nice-gPm8h3DS1s4-unsplash.jpg?v=1665151317012)";
+    svp.style.backgroundSize = "cover";
+    svp.style.backgroundPosition = "center";
+    svp.style.filter = "brightness(40%)";
 
-  sp.style.left = "100%";
-  sp.style.width = "40%";
-  sp.style.color = "white";
+    sp.style.left = "100%";
+    sp.style.width = "40%";
+    sp.style.color = "white";
 
-  svpd.style.left = "0px";
-  svpd.style.backgroundPosition = "center";
-  svpd.style.filter = "brightness(60%)";
+    svpd.style.left = "0px";
+    svpd.style.backgroundPosition = "center";
+    svpd.style.filter = "brightness(60%)";
 
-  spd.style.left = "0px";
-  spd.style.color = "white";
+    spd.style.left = "0px";
+    spd.style.color = "white";
 
-  sv.style.opacity = "0";
-  fp.style.opacity = "0";
+    sv.style.opacity = "0";
+    fp.style.opacity = "0";
 
-  ws.style.width = "1200px";
-  ws.style.opacity = "1";
-  ws.style.left = "500px";
+    ws.style.width = "100%";
+    ws.style.opacity = "1";
+    ws.style.left = "0px";
 
-  wsde.style.opacity = "0";
-  wstr.style.opacity = "0";
-  wsqu.style.opacity = "0";
+    wsde.style.opacity = "0";
+    wstr.style.opacity = "0";
+    wsqu.style.opacity = "0";
 
-  ws.style.zIndex = "0";
-  wsde.style.zIndex = "-1";
-  wstr.style.zIndex = "-1";
-  wsqu.style.zIndex = "-1";
+    ws.style.zIndex = "0";
+    wsde.style.zIndex = "-1";
+    wstr.style.zIndex = "-1";
+    wsqu.style.zIndex = "-1";
 
-  wsde.style.left = "500px";
-  wstr.style.left = "500px";
-  wsqu.style.left = "500px";
+    wsde.style.left = "0px";
+    wstr.style.left = "0px";
+    wsqu.style.left = "0px";
 
-  wsde.style.width = "1200px";
-  wstr.style.width = "1200px";
-  wsqu.style.width = "1200px";
+    wsde.style.width = "100%";
+    wstr.style.width = "100%";
+    wsqu.style.width = "100%";
+  } else {
+    sv.style.backgroundImage = "none";
+    sv.style.filter = "brightness(100%)";
+    sv.style.background = "white";
 
-  bkgif.style.opacity = "0";
+    svp.style.left = "100%";
+    sp.style.left = "100%";
+
+    svpd.style.left = "80%";
+    svpd.style.backgroundPosition = "center";
+    svpd.style.filter = "brightness(60%)";
+
+    spd.style.left = "80%";
+    spd.style.color = "white";
+
+    svpd.style.width = "20%";
+    spd.style.width = "20%";
+
+    sv.style.opacity = "1";
+    fp.style.opacity = "0";
+
+    ws.style.width = "100%";
+    ws.style.opacity = "1";
+    ws.style.left = "0px";
+
+    wsde.style.opacity = "0";
+    wstr.style.opacity = "0";
+    wsqu.style.opacity = "0";
+
+    ws.style.left = "-30%";
+
+    ws.style.zIndex = "0";
+    wsde.style.zIndex = "-1";
+    wstr.style.zIndex = "-1";
+    wsqu.style.zIndex = "-1";
+
+    wsde.style.left = "0px";
+    wstr.style.left = "0px";
+    wsqu.style.left = "0px";
+
+    wsde.style.width = "100%";
+    wstr.style.width = "100%";
+    wsqu.style.width = "100%";
+  }
 }
 
 function start2() {
-  svp.style.left = "100%";
-  svp.style.width = "40%";
-  svp.style.backgroundImage =
-    "url(https://cdn.glitch.global/9169d231-8c93-4181-bba6-4e8d8bfd705f/nick-nice-gPm8h3DS1s4-unsplash.jpg?v=1665151317012)";
-  svp.style.backgroundSize = "cover";
-  svp.style.backgroundPosition = "center";
-  svp.style.filter = "brightness(40%)";
+  if(mobile === false){
+    svp.style.left = "100%";
+    svp.style.width = "40%";
+    svp.style.backgroundImage =
+      "url(https://cdn.glitch.global/9169d231-8c93-4181-bba6-4e8d8bfd705f/nick-nice-gPm8h3DS1s4-unsplash.jpg?v=1665151317012)";
+    svp.style.backgroundSize = "cover";
+    svp.style.backgroundPosition = "center";
+    svp.style.filter = "brightness(40%)";
 
-  sp.style.left = "100%";
-  sp.style.width = "40%";
-  sp.style.color = "white";
+    sp.style.left = "100%";
+    sp.style.width = "40%";
+    sp.style.color = "white";
 
-  svpd.style.left = "0px";
-  svpd.style.backgroundPosition = "center";
-  svpd.style.filter = "brightness(60%)";
+    svpd.style.left = "0px";
+    svpd.style.backgroundPosition = "center";
+    svpd.style.filter = "brightness(60%)";
 
-  spd.style.left = "0px";
-  spd.style.color = "white";
+    spd.style.left = "0px";
+    spd.style.color = "white";
 
-  sv.style.opacity = "0";
-  fp.style.opacity = "0";
+    sv.style.opacity = "0";
+    fp.style.opacity = "0";
 
-  wsde.style.width = "1200px";
-  wsde.style.opacity = "1";
-  wsde.style.left = "500px";
+    wsde.style.width = "100%";
+    wsde.style.opacity = "1";
+    wsde.style.left = "0px";
 
-  ws.style.opacity = "0";
-  wstr.style.opacity = "0";
-  wsqu.style.opacity = "0";
+    ws.style.opacity = "0";
+    wstr.style.opacity = "0";
+    wsqu.style.opacity = "0";
 
-  ws.style.zIndex = "-1";
-  wsde.style.zIndex = "0";
-  wstr.style.zIndex = "-1";
-  wsqu.style.zIndex = "-1";
+    wsde.style.zIndex = "0";
+    ws.style.zIndex = "-1";
+    wstr.style.zIndex = "-1";
+    wsqu.style.zIndex = "-1";
 
-  ws.style.left = "500px";
-  wstr.style.left = "500px";
-  wsqu.style.left = "500px";
+    ws.style.left = "0px";
+    wstr.style.left = "0px";
+    wsqu.style.left = "0px";
 
-  ws.style.width = "1200px";
-  wstr.style.width = "1200px";
-  wsqu.style.width = "1200px";
+    ws.style.width = "100%";
+    wstr.style.width = "100%";
+    wsqu.style.width = "100%";
+  } else {
+    sv.style.backgroundImage = "none";
+    sv.style.filter = "brightness(100%)";
+    sv.style.background = "white";
 
-  bkgif.style.opacity = "0";
+    svp.style.left = "100%";
+    sp.style.left = "100%";
+
+    svpd.style.left = "80%";
+    svpd.style.backgroundPosition = "center";
+    svpd.style.filter = "brightness(60%)";
+
+    spd.style.left = "80%";
+    spd.style.color = "white";
+
+    svpd.style.width = "20%";
+    spd.style.width = "20%";
+
+    sv.style.opacity = "1";
+    fp.style.opacity = "0";
+
+    wsde.style.width = "100%";
+    wsde.style.opacity = "1";
+    wsde.style.left = "0px";
+
+    ws.style.opacity = "0";
+    wstr.style.opacity = "0";
+    wsqu.style.opacity = "0";
+
+    wsde.style.left = "-30%";
+
+    wsde.style.zIndex = "0";
+    ws.style.zIndex = "-1";
+    wstr.style.zIndex = "-1";
+    wsqu.style.zIndex = "-1";
+
+    ws.style.left = "0px";
+    wstr.style.left = "0px";
+    wsqu.style.left = "0px";
+
+    ws.style.width = "100%";
+    wstr.style.width = "100%";
+    wsqu.style.width = "100%";
+  }
 }
 
 function start3() {
-  svp.style.left = "100%";
-  svp.style.width = "40%";
-  svp.style.backgroundImage =
-    "url(https://cdn.glitch.global/9169d231-8c93-4181-bba6-4e8d8bfd705f/nick-nice-gPm8h3DS1s4-unsplash.jpg?v=1665151317012)";
-  svp.style.backgroundSize = "cover";
-  svp.style.backgroundPosition = "center";
-  svp.style.filter = "brightness(40%)";
+  if(mobile === false){
+    svp.style.left = "100%";
+    svp.style.width = "40%";
+    svp.style.backgroundImage =
+      "url(https://cdn.glitch.global/9169d231-8c93-4181-bba6-4e8d8bfd705f/nick-nice-gPm8h3DS1s4-unsplash.jpg?v=1665151317012)";
+    svp.style.backgroundSize = "cover";
+    svp.style.backgroundPosition = "center";
+    svp.style.filter = "brightness(40%)";
 
-  sp.style.left = "100%";
-  sp.style.width = "40%";
-  sp.style.color = "white";
+    sp.style.left = "100%";
+    sp.style.width = "40%";
+    sp.style.color = "white";
 
-  svpd.style.left = "0px";
-  svpd.style.backgroundPosition = "center";
-  svpd.style.filter = "brightness(60%)";
+    svpd.style.left = "0px";
+    svpd.style.backgroundPosition = "center";
+    svpd.style.filter = "brightness(60%)";
 
-  spd.style.left = "0px";
-  spd.style.color = "white";
+    spd.style.left = "0px";
+    spd.style.color = "white";
 
-  sv.style.opacity = "0";
-  fp.style.opacity = "0";
+    sv.style.opacity = "0";
+    fp.style.opacity = "0";
 
-  wstr.style.width = "1200px";
-  wstr.style.opacity = "1";
-  wstr.style.left = "500px";
+    wstr.style.width = "100%";
+    wstr.style.opacity = "1";
+    wstr.style.left = "0px";
 
-  wsde.style.opacity = "0";
-  ws.style.opacity = "0";
-  wsqu.style.opacity = "0";
+    wsde.style.opacity = "0";
+    ws.style.opacity = "0";
+    wsqu.style.opacity = "0";
 
-  ws.style.zIndex = "-1";
-  wsde.style.zIndex = "-1";
-  wstr.style.zIndex = "0";
-  wsqu.style.zIndex = "-1";
+    wstr.style.zIndex = "0";
+    wsde.style.zIndex = "-1";
+    ws.style.zIndex = "-1";
+    wsqu.style.zIndex = "-1";
 
-  wsde.style.left = "500px";
-  ws.style.left = "500px";
-  wsqu.style.left = "500px";
+    wsde.style.left = "0px";
+    ws.style.left = "0px";
+    wsqu.style.left = "0px";
 
-  wsde.style.width = "1200px";
-  ws.style.width = "1200px";
-  wsqu.style.width = "1200px";
+    wsde.style.width = "100%";
+    ws.style.width = "100%";
+    wsqu.style.width = "100%";
+  } else {
+    sv.style.backgroundImage = "none";
+    sv.style.filter = "brightness(100%)";
+    sv.style.background = "white";
 
-  bkgif.style.opacity = "0";
+    svp.style.left = "100%";
+    sp.style.left = "100%";
+
+    svpd.style.left = "80%";
+    svpd.style.backgroundPosition = "center";
+    svpd.style.filter = "brightness(60%)";
+
+    spd.style.left = "80%";
+    spd.style.color = "white";
+
+    svpd.style.width = "20%";
+    spd.style.width = "20%";
+
+    sv.style.opacity = "1";
+    fp.style.opacity = "0";
+
+    wstr.style.width = "100%";
+    wstr.style.opacity = "1";
+    wstr.style.left = "0px";
+
+    wsde.style.opacity = "0";
+    ws.style.opacity = "0";
+    wsqu.style.opacity = "0";
+
+    wstr.style.left = "-30%";
+
+    wstr.style.zIndex = "0";
+    wsde.style.zIndex = "-1";
+    ws.style.zIndex = "-1";
+    wsqu.style.zIndex = "-1";
+
+    wsde.style.left = "0px";
+    ws.style.left = "0px";
+    wsqu.style.left = "0px";
+
+    wsde.style.width = "100%";
+    ws.style.width = "100%";
+    wsqu.style.width = "100%";
+  }
 }
 
 function start4() {
-  svp.style.left = "100%";
-  svp.style.width = "40%";
-  svp.style.backgroundImage =
-    "url(https://cdn.glitch.global/9169d231-8c93-4181-bba6-4e8d8bfd705f/nick-nice-gPm8h3DS1s4-unsplash.jpg?v=1665151317012)";
-  svp.style.backgroundSize = "cover";
-  svp.style.backgroundPosition = "center";
-  svp.style.filter = "brightness(40%)";
+  if(mobile === false){
+    svp.style.left = "100%";
+    svp.style.width = "40%";
+    svp.style.backgroundImage =
+      "url(https://cdn.glitch.global/9169d231-8c93-4181-bba6-4e8d8bfd705f/nick-nice-gPm8h3DS1s4-unsplash.jpg?v=1665151317012)";
+    svp.style.backgroundSize = "cover";
+    svp.style.backgroundPosition = "center";
+    svp.style.filter = "brightness(40%)";
 
-  sp.style.left = "100%";
-  sp.style.width = "40%";
-  sp.style.color = "white";
+    sp.style.left = "100%";
+    sp.style.width = "40%";
+    sp.style.color = "white";
 
-  svpd.style.left = "0px";
-  svpd.style.backgroundPosition = "center";
-  svpd.style.filter = "brightness(60%)";
+    svpd.style.left = "0px";
+    svpd.style.backgroundPosition = "center";
+    svpd.style.filter = "brightness(60%)";
 
-  spd.style.left = "0px";
-  spd.style.color = "white";
+    spd.style.left = "0px";
+    spd.style.color = "white";
 
-  sv.style.opacity = "0";
-  fp.style.opacity = "0";
+    sv.style.opacity = "0";
+    fp.style.opacity = "0";
 
-  wsqu.style.width = "1200px";
-  wsqu.style.opacity = "1";
-  wsqu.style.left = "500px";
+    wsqu.style.width = "100%";
+    wsqu.style.opacity = "1";
+    wsqu.style.left = "0px";
 
-  wsde.style.opacity = "0";
-  wstr.style.opacity = "0";
-  ws.style.opacity = "0";
+    wsde.style.opacity = "0";
+    wstr.style.opacity = "0";
+    ws.style.opacity = "0";
 
-  ws.style.zIndex = "-1";
-  wsde.style.zIndex = "-1";
-  wstr.style.zIndex = "-1";
-  wsqu.style.zIndex = "0";
+    wsqu.style.zIndex = "0";
+    wsde.style.zIndex = "-1";
+    wstr.style.zIndex = "-1";
+    ws.style.zIndex = "-1";
 
-  wsde.style.left = "500px";
-  wstr.style.left = "500px";
-  ws.style.left = "500px";
+    wsde.style.left = "0px";
+    wstr.style.left = "0px";
+    ws.style.left = "0px";
 
-  wsde.style.width = "1200px";
-  wstr.style.width = "1200px";
-  ws.style.width = "1200px";
+    wsde.style.width = "100%";
+    wstr.style.width = "100%";
+    ws.style.width = "100%";
+  } else {
+    sv.style.backgroundImage = "none";
+    sv.style.filter = "brightness(100%)";
+    sv.style.background = "white";
 
-  bkgif.style.opacity = "0";
+    svp.style.left = "100%";
+    sp.style.left = "100%";
+
+    svpd.style.left = "80%";
+    svpd.style.backgroundPosition = "center";
+    svpd.style.filter = "brightness(60%)";
+
+    spd.style.left = "80%";
+    spd.style.color = "white";
+
+    svpd.style.width = "20%";
+    spd.style.width = "20%";
+
+    sv.style.opacity = "1";
+    fp.style.opacity = "0";
+
+    wsqu.style.width = "100%";
+    wsqu.style.opacity = "1";
+    wsqu.style.left = "0px";
+
+    wsde.style.opacity = "0";
+    wstr.style.opacity = "0";
+    ws.style.opacity = "0";
+
+    wsqu.style.left = "-30%";
+
+    wsqu.style.zIndex = "0";
+    wsde.style.zIndex = "-1";
+    wstr.style.zIndex = "-1";
+    ws.style.zIndex = "-1";
+
+    wsde.style.left = "0px";
+    wstr.style.left = "0px";
+    ws.style.left = "0px";
+
+    wsde.style.width = "100%";
+    wstr.style.width = "100%";
+    ws.style.width = "100%";
+  }
 }

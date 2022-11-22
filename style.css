@@ -1,79 +1,27 @@
 * {
     margin: 0;
-    transition: 1s;
   }
-@font-face {
+  @font-face {
     font-family: Nunito;
     src: url(https://cdn.glitch.global/9169d231-8c93-4181-bba6-4e8d8bfd705f/Nunito-Regular.ttf?v=1665153599719);
   }
-@media screen and (max-width: 992px) {
-    serve{
-      position: fixed;
-      background-size: cover;
-      background-repeat: no-repeat;
-      height: 100%;
-      width: 100%;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    serve{
-      position: fixed;
-      background-size: cover;
-      background-repeat: no-repeat;
-      height: 100%;
-      width: 100%;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   body {
     background: black;
-  }
-  #bkgif {
-    position: fixed;
-    background: black;
-    z-index: 0;
-    height: 100%;
-    width: 492px;
-    background-repeat: repeat-x;
-    background-position: center;
-    background-size: cover;
-    right: 0px;
-    opacity: 0;
-    transition: 14s;
   }
   #serve {
     position: fixed;
     background-image: url("https://cdn.glitch.global/9169d231-8c93-4181-bba6-4e8d8bfd705f/nick-nice-gPm8h3DS1s4-unsplash.jpg?v=1665151317012");
     background-size: cover;
-    background-repeat: no-repeat;
     height: 100%;
     width: 100%;
     filter: brightness(50%);
+    transition: 1s;
   }
   #set {
     position: fixed;
     height: 100%;
     width: 100%;
+    transition: 1s;
   }
   #fpw {
     position: relative;
@@ -114,7 +62,7 @@
     width: 500px;
     background: clear;
   }
-  #go {
+  #gto {
     position: relative;
     height: 100px;
     width: 100%;
@@ -125,20 +73,7 @@
     background-repeat: no-repeat;
     background: clear;
     filter: brightness(80%);
-  }
-  #disable{
-    position:fixed;
-    height:40px;
-    width:100%;
-    background:red;
-    margin: 0 auto;
-    display: none;
-    top:100px;
     z-index:999;
-    text-align:center;
-    color:white;
-    font-family: "Nunito", sans-serif;
-    font-size:20px;
   }
   #sidepanelserve {
     position: fixed;
@@ -149,6 +84,7 @@
     top: 0px;
     width: 600px;
     right: 0px;
+    transition: 1s;
   }
   #sidepanel {
     position: fixed;
@@ -160,14 +96,7 @@
     top: 0px;
     width: 600px;
     right: 0px;
-  }
-@media screen and (max-width: 2000px){
-    #sidepanelserve{
-      position:fixed;
-      height:100%;
-      width:100%;
-      background:white;
-    }
+    transition: 1s;
   }
   #sidepanelservede {
     position: fixed;
@@ -176,11 +105,11 @@
     font-family: "Nunito", sans-serif;
     background-image: url("https://cdn.glitch.global/9169d231-8c93-4181-bba6-4e8d8bfd705f/nick-nice-gPm8h3DS1s4-unsplash.jpg?v=1665151317012");
     top: 0px;
-    width: 500px;
-    left: -500px;
+    width: 30%;
+    left: -30%;
     background-size: cover;
     background-position: right;
-    transition: 2s;
+    transition: 1s;
     z-index: 998;
     box-shadow: 0px 0px 4px 2px black;
   }
@@ -191,11 +120,18 @@
     font-family: "Nunito", sans-serif;
     color: white;
     top: 0px;
-    width: 500px;
-    left: -500px;
-    transition: 2s;
+    width: 30%;
+    left: -30%;
+    transition: 1s;
     z-index: 999;
   }
+
+  @media screen and (max-height:10px){
+    #sidepanelservede{
+      display:block;
+    }
+  }
+
   .cplspace {
     width: 100%;
     height: 100%;
@@ -340,27 +276,6 @@
     height: 20px;
     width: 100%;
   }
-  .res {
-    background: clear;
-    text-align: center;
-    vertical-align: middle;
-    height: 100%;
-    width: 100%;
-  }
-  .port {
-    background: clear;
-    text-align: center;
-    vertical-align: middle;
-    height: 100%;
-    width: 100%;
-  }
-  .cont {
-    background: clear;
-    text-align: center;
-    vertical-align: middle;
-    height: 100%;
-    width: 100%;
-  }
   #ws {
     position: fixed;
     height: 100%;
@@ -370,47 +285,54 @@
     align-items: center;
     opacity: 0;
     left: 0px;
-    transition: 2.5s;
+    transition: 1s;
   }
   #wsde {
     position: fixed;
-    height: 100vh;
+    height: 100%;
     width: 100px;
     background: white;
     display: flex;
     align-items: center;
     opacity: 0;
     left: 0px;
-    transition: 2.5s;
+    transition: 1s;
   }
   #wstr {
     position: fixed;
-    height: 100vh;
+    height: 100%;
     width: 100px;
     background: white;
     display: flex;
     align-items: center;
     opacity: 0;
     left: 0px;
-    transition: 2.5s;
+    transition: 1s;
   }
   #wsqu {
     position: fixed;
-    height: 100vh;
+    height: 100%;
     width: 100px;
     background: white;
     display: flex;
     align-items: center;
     opacity: 0;
     left: 0px;
-    transition: 2.5s;
+    transition: 1s;
+  }
+  .wspace{
+    position:relative;
+    height:100%;
+    width:30%;
+    left:0px;
+    background:black;
   }
   .writerflow {
     position: relative;
     height: 98%;
-    width: 90%;
+    width: 60%;
     background: whitesmoke;
-    margin: 0 auto;
+    margin-left:20px;
     border-radius: 15px;
   }
   .wordshere {
