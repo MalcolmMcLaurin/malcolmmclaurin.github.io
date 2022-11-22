@@ -32,19 +32,28 @@ var bkgif = document.getElementById("bkgif");
 var ready = false;
 var mobile = false;
 
-var ww = 2000;
-var hh = 600;
+var ww = 1920;
+var hh = 1080;
 
 var scrnw = window.innerWidth;
 var scrnh = window.innerHeight;
 
 function initiate(){
-  if(scrnw <= ww || scrnh <= hh){
+  if(scrnw < ww || scrnh < hh){
     mobile = true;
+  } else {
+    mobile = false;
   }
+  displayPanel();
 }
 
-window.onload = displayPanel;
+window.onload = initiate;
+
+$(window).resize(function() {
+  location.reload();
+  window.location.reload();
+  window.location.href = window.location.href;
+});
 
 function displayPanel() {
   if(mobile === false){
@@ -59,6 +68,9 @@ function displayPanel() {
     sp.style.opacity = "1";
     svp.style.width = "100%";
     sp.style.width = "100%";
+
+    svpd.style.opacity = "0";
+    spd.style.opacity = "0";
   }
 }
 
