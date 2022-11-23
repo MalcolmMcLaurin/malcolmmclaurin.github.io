@@ -27,19 +27,18 @@ var wsde = document.getElementById("wsde");
 var wstr = document.getElementById("wstr");
 var wsqu = document.getElementById("wsqu");
 
-var bkgif = document.getElementById("bkgif");
-
 var ready = false;
 var mobile = false;
 
-var ww = 1920;
-var hh = 1080;
+var ww = 1270;
+var hh = 910;
 
 var scrnw = window.innerWidth;
 var scrnh = window.innerHeight;
 
 function initiate(){
   if(scrnw < ww || scrnh < hh){
+    //alert(scrnw + " , " + scrnh)
     mobile = true;
   } else {
     mobile = false;
