@@ -41,10 +41,10 @@ function initiate(){
     //alert(scrnw + " , " + scrnh)
     mobile = true;
     go.style.display = "none";
+    displayPanel();
   } else {
     mobile = false;
   }
-  //displayPanel();
 }
 
 window.onload = initiate;
