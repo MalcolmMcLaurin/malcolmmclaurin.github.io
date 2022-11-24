@@ -40,6 +40,7 @@ function initiate(){
   if(scrnw < ww || scrnh < hh){
     //alert(scrnw + " , " + scrnh)
     mobile = true;
+    go.style.display = "none";
   } else {
     mobile = false;
   }
