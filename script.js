@@ -44,7 +44,7 @@ function initiate(){
   } else {
     mobile = false;
   }
-  displayPanel();
+  //displayPanel();
 }
 
 window.onload = initiate;
