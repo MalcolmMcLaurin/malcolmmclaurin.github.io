@@ -27,6 +27,8 @@ var wsde = document.getElementById("wsde");
 var wstr = document.getElementById("wstr");
 var wsqu = document.getElementById("wsqu");
 
+var wh = document.getElementById("wh");
+
 var ready = false;
 var mobile = false;
 
