@@ -33,7 +33,7 @@ var ready = false;
 var mobile = false;
 
 var ww = 1270;
-var hh = 910;
+var hh = 600;
 
 var scrnw = window.innerWidth;
 var scrnh = window.innerHeight;
@@ -47,6 +47,7 @@ function initiate(){
   } else {
     mobile = false;
   }
+  //alert(scrnw + ", " + scrnh)
 }
 
 window.onload = initiate;
