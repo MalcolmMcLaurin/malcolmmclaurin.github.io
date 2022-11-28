@@ -125,13 +125,6 @@
     transition: 1s;
     z-index: 999;
   }
-
-  @media screen and (max-height:10px){
-    #sidepanelservede{
-      display:block;
-    }
-  }
-
   .cplspace {
     position:relative;
     width: 100%;
@@ -142,7 +135,7 @@
     position: relative;
     width: 400px;
     top:100px;
-    height: 60%;
+    height: 70%;
     background: clear;
     margin: 0 auto;
   }
@@ -193,17 +186,11 @@
     left: 50%;
     transform: translate(-50%, 0%);
   }
-  #cpl {
-    position: relative;
-    width: 200px;
-    height: 400px;
-    background: clear;
-    margin:0 auto;  
-    top:-160px;
-  }
   .cplw {
+    position:relative;
     width: 200px;
     height: auto;
+    margin: 0 auto;
   }
   .clb {
     width: 200px;
